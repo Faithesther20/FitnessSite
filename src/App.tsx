@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import Navbar from "@/scenes/navbar/index";
 import { SelectedPage } from '@/shared/type';
 
-const [isTopOfPage, setIsTopOfPage] = useState(true)
+
    
 
 function App() {
@@ -12,18 +12,16 @@ function App() {
 const [isTopOfPage, setIsTopOfPage] = useState(true)
 
 useEffect(() => {
-  const handleScroll =() =>{
-    if(window.scrollY === 0){
+  const handleScroll = () => {
+    if (window.scrollY === 0) {
       setIsTopOfPage(true);
       setSelectedPage(SelectedPage.Home);
     }
-    if(window.scrollY !== 0 ) setIsTopOfPage(false);
-  }
+    if (window.scrollY !== 0) setIsTopOfPage(false);
+  };
   window.addEventListener("scroll", handleScroll);
-  return() => window.removeEventListener('scroll', handleScroll);
-   
- },[])
- 
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
  return (
     <div className='app bg-gray-20'>
       <Navbar
