@@ -1,5 +1,5 @@
-import { BenefitType, SelectedPage } from "@/shared/type";
-import React from "react";
+import { SelectedPage } from "@/shared/type";
+
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
