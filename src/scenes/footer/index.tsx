@@ -13,7 +13,7 @@ const Footer = () => {
             purus et arcu massa dictum condimentum. Augue scelerisque iaculis
             orci ut habitant laoreet. Iaculis tristique.
           </p>
-          <a href="https://m.facebook.com/p/Digisoft-IT-100086601702022/" className="text-bold">Digisoft I.T</a>
+          <a href="https://m.facebook.com/p/Digisoft-IT-100086601702022/" className="font-extrabold underline"> Ⓒ Digisoft I.T 2023</a>
 
          </div>
          <div className="mt-16 basis-1/4 md:mt-0">
